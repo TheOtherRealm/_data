@@ -1,0 +1,15 @@
+name: otherrealm
+type: theme
+base theme: stable
+description: 'Theme of the website otherrealm.org.'
+core: 8.x
+libraries:
+  - otherrealm/global-styling
+  - otherrealm/global-scripts
+regions:
+  header: Header
+  sidebar_first: 'Sidebar first'
+  content: Content
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom'
+
