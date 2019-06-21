@@ -52,7 +52,7 @@ a,a:active,a:hover,a:focus{
 }
 #logoWrapper{
 }
-.sidebar {
+.layout-sidebar-first {
     position: fixed;
     float: left;
     width: 14em;
@@ -67,7 +67,7 @@ a,a:active,a:hover,a:focus{
 	overflow:visible;
 	margin-left:14.3em;
 }
-.sidebarTitle{
+.layout-sidebar-firstTitle{
 	color:#800000;
 }
 .logoImg{
@@ -594,14 +594,14 @@ fieldset[disabled] .btn {
 		padding: 0 2%;
 		width: 90%;
 	}  */
-	.sidebar,.sidebar>*{
+	.layout-sidebar-first,.layout-sidebar-first>*{
 		display: none;
 		background:white;
 		padding:0;
 		height:auto;
 		z-index: 9999;
 	}
-	.sidebar{
+	.layout-sidebar-first{
 		position: absolute;		
 		margin:2em 5px 5px 5px;;
 		box-shadow: 3px 3px 2px 1px  rgba(0,0,0,.7),-1px -1px rgba(0,0,0,.1);

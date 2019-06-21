@@ -52,10 +52,9 @@
 	{{ page.highlighted }}
 	{{ page.help }}
 	<main role="main">
-		<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-		<div class="layout-content">
-			{{ page.content }}
-		</div>{# /.layout-content #}
+	<a id="menubar" href="javascript:toggleMenu(0)" class="box-shadow-menu">
+	<img src="https://otherrealm.org/wp-content/themes/otherrealm/img/Ic_menu_48px.svg" alt="Menu">
+	</a>
 		{% if page.sidebar_first %}
 			<aside class="layout-sidebar-first" role="complementary">
 				{{ page.sidebar_first }}
@@ -66,6 +65,10 @@
 				{{ page.sidebar_second }}
 			</aside>
 		{% endif %}
+		<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+		<div class="layout-content">
+			{{ page.content }}
+		</div>{# /.layout-content #}
 	</main>
 	{% if page.footer %}
 		<footer role="contentinfo">
