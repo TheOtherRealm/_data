@@ -60,7 +60,7 @@ a,a:active,a:hover,a:focus{
     margin: 2em 5px 5px 5px;
     left: 0;
 }
-#primary{
+.layout-content{
 	float:left;
 	width:73%;
 	padding-right:2px;
@@ -91,7 +91,7 @@ div.container {
 	overflow: visible;
 }
 #menubar{
-	margin-top: 2em;
+	/* margin-top: 5em; */
 }
 /* Horizontal centering of image: set left & right margins to 'auto' */
 img.displayed {
@@ -340,6 +340,46 @@ p{
 	float: right;
 	position: relative;
 }
+.menuImg{
+	width:75px;
+	height:auto;
+}
+#block-otherrealm-main-menu ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+	float:left;
+	width:14em;
+	/* display:inline-block; */
+}
+#block-otherrealm-main-menu{
+	margin:2em 5px 5px 5px;
+	padding:0;
+	margin:0;
+	font-size:1.5em;
+	z-index: 1;
+}
+.layout-content,#block-otherrealm-content{
+	z-index:5;
+}
+.search-block-form{
+	z-index: 0;
+}
+.sidebarTitle{
+	color:#8000ff;
+	width:inherit;
+	text
+}
+/* #block-otherrealm-main-menu .contextual{
+	z-index:0;
+	background:none;
+} */
+.layout-sidebar-first{
+	margin:2em 5px 5px 5px;
+	padding:0;
+	margin:0;
+	z-index:0;
+} 
 .or-img {display:none}
 .or-img-left, .or-img-right, .or-img-badge {cursor:pointer}
 .or-img-badge {height:13px;width:13px;padding:0}
@@ -553,12 +593,22 @@ fieldset[disabled] .btn {
 	.header{
 		position: absolute;
 	} */
+	#block-otherrealm-branding{
+		margin-left:5em
+	}
 	#rootDiv{
 		padding: 0 0 0 0;
 		margin-left: 2%;
 		margin-right: 2%;
 		overflow: hidden;
-		margin: .5em 0;
+		margin: .5em;
+	}
+	.layout-content{
+		float:left;
+		width:100%;
+		padding-right:0px;
+		overflow:visible;
+		margin:.5em;
 	}
 	.wagATag{
 		font-size: 35pt;
@@ -566,8 +616,11 @@ fieldset[disabled] .btn {
 		left:-25px;
 		padding-right:5px;
 	}
+	.region-content, .mainStuff{
+		margin: 0 2%;
+	}
 	#main, #primary{
-		margin: 1.5em 10px 0;
+		/* margin: 1.5em 10px 0; */
 		width:100%;
 	}
 	/*	.divRapperLeft{
@@ -616,7 +669,7 @@ fieldset[disabled] .btn {
 		z-index:3;
 	}
 	#menubar{
-		margin-top: 1.5em;
+		margin-top: 2.2em;
 	}
 }
 @media screen and (max-width: 700px) {
@@ -770,8 +823,8 @@ iframe {
 .fm-header-title::first-letter {
     color: darkred;
 }
-#primary, a{
+/*#primary, a{
 	z-index:9999999;
-	/* pointer-events: all;
-	cursor: auto; */
-}
+	pointer-events: all;
+	cursor: auto; 
+}*/
