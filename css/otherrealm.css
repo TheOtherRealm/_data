@@ -90,8 +90,11 @@ div.container {
 	vertical-align: middle;
 	overflow: visible;
 }
-#menubar{
-	/* margin-top: 5em; */
+#sideBar{
+	z-index:0;
+}
+#actualContent{
+	z-index:2;
 }
 /* Horizontal centering of image: set left & right margins to 'auto' */
 img.displayed {
@@ -348,27 +351,25 @@ p{
 	padding:0;
 	margin:0;
 	list-style:none;
-	float:left;
-	width:14em;
-	/* display:inline-block; */
 }
 #block-otherrealm-main-menu{
 	margin:2em 5px 5px 5px;
 	padding:0;
 	margin:0;
 	font-size:1.5em;
-	z-index: 1;
+	width:9em;
+	float:left;
+	z-index:1;
 }
-.layout-content,#block-otherrealm-content{
+#block-otherrealm-content{
 	z-index:5;
 }
-.search-block-form{
+#block-otherrealm-search{
 	z-index: 0;
 }
 .sidebarTitle{
 	color:#8000ff;
 	width:inherit;
-	text
 }
 /* #block-otherrealm-main-menu .contextual{
 	z-index:0;
