@@ -43,6 +43,7 @@
  */
 #}
 <div class="layout-container">
+<span class="facebook"><a id="facebook" href="https://www.facebook.com/otherrealm.org/">Facebook</a> </span>
     <header role="banner">
         {{ page.header }}
     </header>
@@ -52,8 +53,8 @@
     {{ page.highlighted }}
     {{ page.help }}
     <main class="mainStuff" role="main">
-        <a class="box-shadow-menu" href="javascript:toggleMenu(0)" id="menubar">
-            <img alt="Menu" src="themes/otherrealm/img/Ic_menu_48px.svg">
+        <a class="box-shadow-menu" href='#menu' id="menubar">
+            <img alt="Menu" src="/otherrealm.org/web/themes/otherrealm/img/Ic_menu_48px.svg">
         </a>
         {% if page.sidebar_first %}
             <aside class="layout-sidebar-first" id="sideBar" role="complementary">
@@ -87,7 +88,7 @@
                 <br>
             </a>
             <a href="https://www.gnu.org/licenses/agpl-3.0.txt" title="If you, for some strange reason, actually want the custom code, just contact me: https://otherrealm.org/contact/"><img alt="Gnu AFFERO  Public License" class="gpl" src="https://www.gnu.org/graphics/agplv3-155x51.png">Code is licensed under the GNU Afferō General Public License</a><br>
-            <a href="/privacy-policy/" title="Privacy Policy">Privacy Policy</a>
+            <a href="/privacy-policy" title="Privacy Policy">Privacy Policy</a>
         </div>
     </footer>
     {# {% endif %} #}

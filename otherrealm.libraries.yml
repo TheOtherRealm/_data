@@ -3,7 +3,6 @@ global-styling:
   css:
     theme:
       css/otherrealm.css: {}
-      css/ie.css: {}
 global-scripts:
   version: 1.x
   dependencies:
