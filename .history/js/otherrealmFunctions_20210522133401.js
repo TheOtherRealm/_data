@@ -95,12 +95,7 @@ for more details: <https://www.gnu.org/licenses/agpl-3.0.txt>.
 			console.log($(this).html());
 			$(this).remove();
 		});
-		// $('.webform-button--submit').click(function(){
-		// 	if($('.form-item--error-message:visible')){
-		// 		console.log($('.form-item--error-message:visible').first().text())
-		// 		$('.form-item--error-message:visible').first().focus();
-		// 	}
-		// });
+		$('.form-item--error-message').vi
 	});
 	jQuery('.fm-form-container').css('display', 'block');
 })(jQuery);

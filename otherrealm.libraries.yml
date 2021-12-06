@@ -8,6 +8,5 @@ global-scripts:
   dependencies:
     - core/jquery: {}
   js:
-    js/jquery-3.4.1.js: {}
     js/jquery-ui-1.12.1.custom/jquery-ui.js: {}
     js/otherrealmFunctions.js: {}

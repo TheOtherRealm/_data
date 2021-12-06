@@ -10,7 +10,6 @@ function otherrealm_html_head_alter(&$head_elements) {
 	$head_elements['system_meta_content_type']['#attributes'] = [
 		'charset' => 'utf-8',
 	];
-
 	// Optimize mobile viewport.
 	$head_elements['mobile_viewport'] = [
 		'#type'       => 'html_tag',
@@ -21,4 +20,3 @@ function otherrealm_html_head_alter(&$head_elements) {
 		],
 	];
 }
-?>
