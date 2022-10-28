@@ -2,7 +2,7 @@ name: otherrealm
 type: theme
 base theme: stable
 description: 'Theme of the website otherrealm.org.'
-core: 8.x
+core_version_requirement: ^8 || ^9
 libraries:
   - otherrealm/global-styling
   - otherrealm/global-scripts

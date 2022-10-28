@@ -6,7 +6,7 @@ global-styling:
 global-scripts:
   version: 1.x
   dependencies:
-    - core/jquery: {}
+    - core/jquery
   js:
     js/jquery-ui-1.12.1.custom/jquery-ui.js: {}
     js/otherrealmFunctions.js: {}

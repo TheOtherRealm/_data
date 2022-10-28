@@ -24,7 +24,7 @@
   We call a macro which calls itself to render the full tree.
   @see https://twig.symfony.com/doc/1.x/tags/macro.html
 #}
-<img src="/otherrealm.org/web/themes/otherrealm/img/About.png" alt="About" title="About" class="menuImg"> 
+<a href="/" title="home"><img src="/{{base_path ~ directory}}/img/About.png" tabindex="0" alt="About" title="About" class="menuImg"> </a>
 {{ menus.menu_links(items, attributes, 0) }}
 {% macro menu_links(items, attributes, menu_level) %}
 	{% import _self as menus %}
@@ -38,13 +38,14 @@
 		<li{{ item.attributes }}>
 		{% if menu_level == 0 %}
 			<p>
-				<a href="{{item.url}}" title"{{item.title}}" class="sidebarTitle">
-					{# <img src="/otherrealm.org/web/themes/otherrealm/img/{{item.title}}.png" alt="{{item.title}}" title="{{item.title}}" class="menuImg"> #}
+				<a href="{{item.url}}" tabindex="{{loop.index}}" title"{{item.title}}"  class="sidebarTitle">
+					{# <img src="/themes/otherrealm/img/{{item.title}}.png" alt="{{item.title}}" title="{
+						{item.title}}" class="menuImg"> #}
 					{{item.title}}
 				</a>
 			</p>
 		{% else %}
-			{{ link(item.title, item.url) }}
+			{{ link(item.title, item.url,loop.index) }}
 		{% endif %}
 		{% if item.below %}
 			{{ menus.menu_links(item.below, attributes, menu_level + 1) }}
